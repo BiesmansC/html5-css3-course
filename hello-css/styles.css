@@ -1,0 +1,50 @@
+body {
+  color: #414141; /* Dark gray */
+  background-color: #eeeeee; /* Light gray */
+  font-size: 18px; /* base font size for the document */
+}
+
+h1 {
+  font-size: 2em; /* 2 times bigger than base font size */
+}
+
+h2 {
+  font-size: 1.6em; /* 1.6 times bigger than base font size */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: normal;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+ol {
+  list-style-type: lower-roman;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  text-align: left;
+}
+
+/* (You probably shouldn't do this) */
+em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+strong {
+  font-weight: normal;
+  font-style: italic;
+}
