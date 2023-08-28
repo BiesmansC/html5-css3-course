@@ -8,9 +8,100 @@
   color: #fff;
   background-color: #5995da; /* Blue */
   padding: 20px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .menu {
-  border: 1px solid #fff; /* For debugging */
   width: 900px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login {
+  margin-left: 20px;
+}
+
+.header-container {
+  color: #5995da;
+  background-color: #d6e9fe;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  width: 900px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /*  Since .header has an explicit height, items can be positioned vertically inside of it. */
+}
+
+.photo-grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-grid {
+  width: 900px;
+  display: flex;
+  justify-content: center; /* horizontal alignment (when flex-direction: row;) */
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center; /* vertical alignment (when flex-direction: row;) */
+}
+
+.photo-grid-item {
+  border: 1px solid #fff;
+  width: 300px;
+  height: 300px;
+}
+
+.first-item {
+  order: 1;
+}
+
+.last-item {
+  order: -1;
+}
+
+.social,
+.subscribe {
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item {
+  border: 1px solid #fff;
+  background-color: #d6e9fe;
+  height: 200px;
+  flex: 1; /* tells the items to stretch to match the width of .footer. Since they all have the same weight, they’ll stretch equally */
+}
+
+.footer-three {
+  flex: 2; /* make the third item grow twice as fast as the other two */
+}
+
+.footer-one,
+.footer-three {
+  background-color: #5995da;
+  flex: initial; /* fixed width, not flexible (without this, flex: 1; would be inheritied and fixed width ignored) */
+  width: 300px;
+}
+
+/*
+Auto-margins eat up all the extra space in a flex container, so instead of distributing items equally, this moves the .signup and any following items (.login) to the right side of the container. 
+*/
+.signup {
+  margin-left: auto;
 }
