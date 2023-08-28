@@ -3,3 +3,89 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.menu {
+  height: 100px;
+  background-color: #b2d6ff; /* Medium blue */
+}
+
+/*  sidebar layout */
+.sidebar {
+  float: left;
+  width: 200px;
+  height: 300px;
+  background-color: #f09a9d; /* Red */
+}
+
+.content {
+  float: left;
+  width: 650px;
+  height: 500px;
+  background-color: #f5cf8e; /* Yellow */
+}
+
+.footer {
+  /*
+    clear: both;            /*  tell a block to ignore any floats that appear before it, like forcing a box back into the default vertical flow of the page 
+    height: 200px;
+    */
+
+  overflow: hidden;
+  background-color: #d6e9fe;
+}
+
+/*  fixed-width layout */
+.page {
+  width: 900px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+/*  full-bleed layout */
+.container {
+  overflow: hidden; /*  we’re telling it to recognize the height of any floated elements it contains. Without it, we wouldn’t see our background color because .container would have zero height. */
+  background-color: #eaedf0;
+}
+
+/*  multi-column layout */
+.footer-item {
+  float: left;
+  width: 31%;
+  margin: 20px 1.15%;
+  height: 160px;
+  background-color: #b2d6ff; /* Medium blue */
+}
+
+.content {
+  padding: 20px;
+}
+
+.article-image {
+  float: left;
+  width: 300px;
+  height: 200px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.avatar {
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin: 25px;
+  border-radius: 40px;
+  background-color: #d6e9fe;
+}
+
+.username {
+  margin-top: 30px;
+}
+
+.comment {
+  margin: 10px;
+  overflow: hidden; /* This is important, the text will be on the right of the image but not under it */
+}
